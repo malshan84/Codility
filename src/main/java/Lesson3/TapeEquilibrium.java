@@ -7,17 +7,17 @@ public class TapeEquilibrium {
 	public int solution(int[] A){
 
 		int sumFront = 0;
-		int result = 0;
+		int minDiff = Integer.MAX_VALUE;
 		int sumBack = Arrays.stream(A).sum();
 
 		for(int i = 0; i < A.length-1; i++) {
 			sumFront+=A[i];
 			sumBack-=A[i];
-			int tmp = Math.abs(sumFront - sumBack);
-			if(i == 0 || result > tmp) {
-				result = tmp;
+			int diff = Math.abs(sumFront - sumBack);
+			if(minDiff > diff) {
+				minDiff = diff;
 			}
 		}
-		return result;
+		return minDiff;
 	}
 }
