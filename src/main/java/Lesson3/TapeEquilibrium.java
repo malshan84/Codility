@@ -1,29 +1,23 @@
 package Lesson3;
 
+import java.util.Arrays;
+
+//https://app.codility.com/demo/results/training84S6N4-VS6/
 public class TapeEquilibrium {
 	public int solution(int[] A){
-		int sum = 0;
+
+		int sumFront = 0;
 		int result = 0;
-		for(int a : A) {
-			sum+=a;
-		}
+		int sumBack = Arrays.stream(A).sum();
 
-		int frontSum = A[0];
-
-		for(int index=1; index<A.length-1; index++) {
-			int backSum = sum - frontSum;
-			int d = Math.abs(frontSum - sum + frontSum);
-			if(result >= d || index == 1) {
-				result = d;
+		for(int i = 0; i < A.length-1; i++) {
+			sumFront+=A[i];
+			sumBack-=A[i];
+			int tmp = Math.abs(sumFront - sumBack);
+			if(i == 0 || result > tmp) {
+				result = tmp;
 			}
-			frontSum+=A[index];
 		}
-
 		return result;
-	}
-
-	public static void main(String[] args) {
-		int result = new TapeEquilibrium().solution(new int[]{-10, -20, -30, -40, 100});
-		System.out.println(result);
 	}
 }
