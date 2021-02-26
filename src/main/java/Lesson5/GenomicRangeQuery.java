@@ -14,28 +14,24 @@ public class GenomicRangeQuery {
 		}
 
 		int[] R = new int[P.length];
-		int p;
-		int q;
+		int start;
+		int end;
 		for(int i = 0; i< P.length; i++) {
-			p = P[i];
-			q = Q[i];
+			start = P[i];
+			end = Q[i]+1;
 
-			if(A[p]<A[q+1]) {
+			if(A[start]!=A[end]) {
 				R[i] = 1;
-				continue;
 			}
-
-			if(C[p]<C[q+1]) {
+			else if(C[start]!=C[end]) {
 				R[i] = 2;
-				continue;
 			}
-
-			if(G[p]<G[q+1]) {
+			else if(G[start]!=G[end]) {
 				R[i] = 3;
-				continue;
 			}
-
-			R[i] = 4;
+			else {
+				R[i] = 4;
+			}
 		}
 		return R;
 	}
