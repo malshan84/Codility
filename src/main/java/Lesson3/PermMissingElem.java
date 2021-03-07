@@ -11,9 +11,4 @@ public class PermMissingElem {
 		}
 		return total-sumA;
 	}
-
-	public static void main(String[] args) {
-		int result = new PermMissingElem().getMissingElement(new int[]{2,3,1,6,7,8,4});
-		System.out.println(result);
-	}
 }
