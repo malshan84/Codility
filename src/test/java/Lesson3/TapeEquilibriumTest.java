@@ -10,7 +10,7 @@ class TapeEquilibriumTest {
 	void test1() {
 		Assertions.assertEquals(
 				1,
-				tapeEquilibrium.solution(new int[]{3,1,2,4,3})
+				tapeEquilibrium.getMinimalDifference(new int[]{3,1,2,4,3})
 		);
 	}
 
@@ -18,7 +18,7 @@ class TapeEquilibriumTest {
 	void test2(){
 		Assertions.assertEquals(
 				20,
-				tapeEquilibrium.solution(new int[]{-10, -20, -30, -40, 100})
+				tapeEquilibrium.getMinimalDifference(new int[]{-10, -20, -30, -40, 100})
 		);
 	}
 
@@ -26,7 +26,7 @@ class TapeEquilibriumTest {
 	void test3(){
 		Assertions.assertEquals(
 				2,
-				tapeEquilibrium.solution(new int[]{-1,1})
+				tapeEquilibrium.getMinimalDifference(new int[]{-1,1})
 		);
 	}
 
@@ -34,7 +34,7 @@ class TapeEquilibriumTest {
 	void test4(){
 		Assertions.assertEquals(
 				1,
-				tapeEquilibrium.solution(new int[]{1, 1, 3})
+				tapeEquilibrium.getMinimalDifference(new int[]{1, 1, 3})
 		);
 	}
 }

@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 //https://app.codility.com/demo/results/training84S6N4-VS6/
 public class TapeEquilibrium {
-	public int solution(int[] A){
+	public int getMinimalDifference(int[] A){
 
 		int sumFront = 0;
 		int minDiff = Integer.MAX_VALUE;
