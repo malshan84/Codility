@@ -3,8 +3,6 @@ package Lesson4;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class FrogRiverOneTest {
 
 	FrogRiverOne frogRiverOne = new FrogRiverOne();
@@ -13,7 +11,7 @@ class FrogRiverOneTest {
 	void test1() {
 		Assertions.assertEquals(
 				6,
-				frogRiverOne.solution(5,new int[]{1,3,1,4,2,3,5,4})
+				frogRiverOne.getEarliestTime(5,new int[]{1,3,1,4,2,3,5,4})
 		);
 	}
 
@@ -21,7 +19,7 @@ class FrogRiverOneTest {
 	void test2() {
 		Assertions.assertEquals(
 				0,
-				frogRiverOne.solution(1,new int[]{1})
+				frogRiverOne.getEarliestTime(1,new int[]{1})
 		);
 	}
 }

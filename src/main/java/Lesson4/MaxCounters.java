@@ -3,7 +3,7 @@ package Lesson4;
 import java.util.Arrays;
 
 public class MaxCounters {
-	public int[] solution(int N, int[] A){
+	public int[] calc(int N, int[] A){
 		int max = Integer.MIN_VALUE;
 		int maxCounter = 0;
 		int[] result = new int[N];
