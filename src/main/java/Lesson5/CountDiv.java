@@ -1,7 +1,7 @@
 package Lesson5;
 
 public class CountDiv {
-	public int solution(int A, int B, int K){
+	public int getCount(int A, int B, int K){
 
 		if(K == 0) {
 			return 0;

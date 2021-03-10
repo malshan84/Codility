@@ -3,7 +3,7 @@ package Lesson4;
 import java.util.Arrays;
 
 public class PermCheck {
-	public int solution(int[] A){
+	public int isPermutation(int[] A){
 		Arrays.sort(A);
 
 		int prev = 0;

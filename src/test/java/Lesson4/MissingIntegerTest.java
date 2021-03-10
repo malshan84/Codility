@@ -10,7 +10,7 @@ class MissingIntegerTest {
 	void test1() {
 		assertEquals(
 				5,
-				missingInteger.solution(new int[]{1, 3, 6, 4, 1, 2}));
+				missingInteger.getSmallestMissingPositiveInteger(new int[]{1, 3, 6, 4, 1, 2}));
 
 	}
 
@@ -18,7 +18,7 @@ class MissingIntegerTest {
 	void test2() {
 		assertEquals(
 				4,
-				missingInteger.solution(new int[]{1,2,3}));
+				missingInteger.getSmallestMissingPositiveInteger(new int[]{1,2,3}));
 
 	}
 
@@ -26,7 +26,7 @@ class MissingIntegerTest {
 	void test3() {
 		assertEquals(
 				1,
-				missingInteger.solution(new int[]{-1,-2,0}));
+				missingInteger.getSmallestMissingPositiveInteger(new int[]{-1,-2,0}));
 
 	}
 
@@ -34,7 +34,7 @@ class MissingIntegerTest {
 	void test4() {
 		assertEquals(
 				2,
-				missingInteger.solution(new int[]{1,6,4,7,-1,-4,-6,5,100,4,5,77}));
+				missingInteger.getSmallestMissingPositiveInteger(new int[]{1,6,4,7,-1,-4,-6,5,100,4,5,77}));
 
 	}
 
@@ -42,7 +42,7 @@ class MissingIntegerTest {
 	void test5() {
 		assertEquals(
 				1,
-				missingInteger.solution(new int[]{4, 5, 6, 2}));
+				missingInteger.getSmallestMissingPositiveInteger(new int[]{4, 5, 6, 2}));
 
 	}
 
@@ -50,7 +50,7 @@ class MissingIntegerTest {
 	void test6() {
 		assertEquals(
 				1,
-				missingInteger.solution(new int[]{2}));
+				missingInteger.getSmallestMissingPositiveInteger(new int[]{2}));
 
 	}
 
@@ -58,7 +58,7 @@ class MissingIntegerTest {
 	void test7() {
 		assertEquals(
 				2,
-				missingInteger.solution(new int[]{1}));
+				missingInteger.getSmallestMissingPositiveInteger(new int[]{1}));
 
 	}
 }

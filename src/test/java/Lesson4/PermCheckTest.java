@@ -10,27 +10,27 @@ class PermCheckTest {
 	void test1() {
 		assertEquals(
 				1,
-				permCheck.solution(new int[]{4,1,3,2}));
+				permCheck.isPermutation(new int[]{4,1,3,2}));
 	}
 
 	@Test
 	void test2() {
 		assertEquals(
 				0,
-				permCheck.solution(new int[]{4,1,3}));
+				permCheck.isPermutation(new int[]{4,1,3}));
 	}
 
 	@Test
 	void test3() {
 		assertEquals(
 				1,
-				permCheck.solution(new int[]{1}));
+				permCheck.isPermutation(new int[]{1}));
 	}
 
 	@Test
 	void test4() {
 		assertEquals(
 				0,
-				permCheck.solution(new int[]{4}));
+				permCheck.isPermutation(new int[]{4}));
 	}
 }

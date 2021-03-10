@@ -3,7 +3,7 @@ package Lesson4;
 import java.util.Arrays;
 
 public class MissingInteger {
-	public int solution(int[] A){
+	public int getSmallestMissingPositiveInteger(int[] A){
 
 		Arrays.sort(A);
 		if(A[A.length-1] <= 0) {

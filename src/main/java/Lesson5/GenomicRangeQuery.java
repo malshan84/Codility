@@ -1,7 +1,7 @@
 package Lesson5;
 
 public class GenomicRangeQuery {
-	public int[] solution(String S, int[] P, int[] Q){
+	public int[] fetch(String S, int[] P, int[] Q){
 
 		int[] A = new int[S.length()+1];
 		int[] C = new int[S.length()+1];
