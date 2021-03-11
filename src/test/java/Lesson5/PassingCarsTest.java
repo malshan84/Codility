@@ -15,7 +15,7 @@ class PassingCarsTest {
 //		A[2] = 0
 //		A[3] = 1
 //		A[4] = 1
-		assertThat(passingCars.solution(new int[]{0,1,0,1,1}))
+		assertThat(passingCars.getCount(new int[]{0,1,0,1,1}))
 				.isEqualTo(5);
 	}
 
@@ -23,7 +23,7 @@ class PassingCarsTest {
 	void test2() {
 //		A[0] = 1
 //		A[1] = 0
-		assertThat(passingCars.solution(new int[]{1,0}))
+		assertThat(passingCars.getCount(new int[]{1,0}))
 				.isEqualTo(0);
 	}
 }

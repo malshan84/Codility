@@ -1,7 +1,7 @@
 package Lesson5;
 
 public class MinAvgTwoSlice {
-	public int solution(int[] A) {
+	public int getMinAverageStartIndex(int[] A) {
 		double tmp = Integer.MAX_VALUE;
 		int result = 0;
 		for(int i = 0; i<A.length-1; i++) {
