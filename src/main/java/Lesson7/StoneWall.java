@@ -7,11 +7,9 @@ public class StoneWall {
 		Stack<Integer> stack = new Stack<>();
 		int numOfBlocks = 0;
 		for(int h : H) {
-			if(!stack.isEmpty() && stack.peek() >= h) {
-				while (!stack.isEmpty() && stack.peek() > h) {
-					stack.pop();
-					numOfBlocks++;
-				}
+			while (!stack.isEmpty() && stack.peek() > h) {
+				stack.pop();
+				numOfBlocks++;
 			}
 
 			if(stack.isEmpty() || stack.peek() < h) {
@@ -19,6 +17,5 @@ public class StoneWall {
 			}
 		}
 		return numOfBlocks+stack.size();
-
 	}
 }
